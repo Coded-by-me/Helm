@@ -1,0 +1,9 @@
+mysql:
+  name: mysql
+  replica: 1
+  enabled: true
+  image: mysql:latest
+  service:
+    port: 3306
+  auth:
+    secretName: mysql-secret
